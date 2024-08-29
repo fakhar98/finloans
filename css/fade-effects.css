@@ -1,0 +1,39 @@
+.fade-in-left, .fade-in-right {
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+  }
+
+  .fade-in-left {
+    transform: translateX(-100%);
+  }
+
+  .fade-in-right {
+    transform: translateX(100%);
+  }
+
+  .fade-in-left.visible, .fade-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  @media screen and (max-width:1024px) {
+    
+  }
+  @media screen and (max-width: 700px) {
+    .fade-in-left, .fade-in-right {
+      opacity: 0;
+      transition: opacity 1s, transform 1s;
+    }
+  
+    .fade-in-left {
+      transform: translateX(0%);
+    }
+  
+    .fade-in-right {
+      transform: translateX(0%);
+    }
+  
+    .fade-in-left.visible, .fade-in-right.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
